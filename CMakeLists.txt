@@ -38,3 +38,10 @@ install(
 )
 
 ament_package()
+
+# 告诉系统安装描述文件和启动脚本
+install(DIRECTORY
+  description
+  launch
+  DESTINATION share/${PROJECT_NAME}
+)
